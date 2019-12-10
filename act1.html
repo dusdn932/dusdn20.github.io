@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    section article ul{
+      font-size: 15px;
+      border : 5px solid black;
+    }
+    section{
+      width : 500px;
+      height : 500px;
+    }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#apple').click(function() {
+          $('#apple11').toggle();
+        });
+        $('#apple2').click(function() {
+          $('#apple22').toggle();
+        });
+        $('#apple3').click(function() {
+          $('#apple33').toggle();
+        });
+      });
+      </script>
+  </head>
+  <body>
+    <h1>먹고싶은사과는 보이게 하고 먹고싶지 않은 사과는 보이지않게 해주세요</h1>
+    <section>
+      <article>
+        <form>
+          <input type="button" id = "apple" value = "사과 1">
+          <input type="button" id = "apple2" value = "사과 2">
+          <input type="button" id = "apple3" value = "사과 3">
+        </form>
+        <div id = "apple11">
+          <img src="img/apple.jpg">
+        </div>
+        <div id = "apple22">
+          <img src="img/apple2.jpg">
+        </div>
+        <div id = "apple33">
+          <img src="img/apple3.jpg">
+        </div>
+      </article>
+    </section>
+  </body>
+</html>

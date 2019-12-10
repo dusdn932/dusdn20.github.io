@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    section article ul {
+      font-size: 15px;
+    }
+
+    section {
+      width: 500px;
+      height: 500px;
+      border: 5px solid black
+    }
+  </style>
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#hideP').click(function(){
+        $('p').hide();
+      });
+    });
+    </script>
+</head>
+<h1>공지</h1>
+<body>
+  <section>
+    <article>
+      <ul>
+        <li id="hideP">텍스트 감추기</li>
+      </ul>
+      <p>안녕하십니까 **회사 ***대리맞으신가요?</p>
+      <p>지금 저희가 비밀리에 회사내부검사를 실시할 예정입니다.</p>
+      <p>저희의 지시대로 해주신다면 포상금을 지급하도록 하겠습니다</p>
+      <p>지시내용은 추후 말씀드리겠습니다.</p>
+      <p>이내용을 다 읽으셨으면 버튼 하나로 다 지워주시기바랍니다</p>
+      <p>감사합니다.</p>
+    </article>
+  </section>
+</body>
+
+</html>
